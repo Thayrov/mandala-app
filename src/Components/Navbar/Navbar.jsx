@@ -43,7 +43,7 @@ const Navbar = () => {
 					</ul>
 				</Grid>
 
-				<Grid item xs={12} md={3} lg={2} sx={{flexDirection: 'flex-end'}}>
+				<Grid item xs={12} md={3} lg={2}>
 					<CartWidget />
 				</Grid>
 			</Grid>

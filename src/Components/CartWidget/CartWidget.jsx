@@ -7,8 +7,8 @@ const CartWidget = () => {
 		<Box
 			px={2}
 			sx={{display: 'flex', justifyContent: 'flex-end', color: 'primary.dark'}}>
-			<Typography variant="h8">Carrito</Typography>
 			<RiShoppingCartLine size={25} />
+			<Typography variant="h8">0</Typography>
 		</Box>
 	);
 };

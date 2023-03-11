@@ -1,6 +1,7 @@
 import {Box, Button, Grid} from '@mui/material';
 
 import CartWidget from '../CartWidget/CartWidget';
+import {Link} from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
@@ -14,14 +15,14 @@ const Navbar = () => {
 			}}>
 			<Grid container sx={{display: 'flex'}}>
 				<Grid item xs={12} md={3} lg={2}>
-					<a href="#" className={styles.logo}>
+					<Link to="/" className={styles.logo}>
 						<img
 							src="https://res.cloudinary.com/dhjlbf6xs/image/upload/v1677270121/MandalaApp/undraw_flower_1_mdvjaw.svg"
 							alt="logo"
 							width={40}
 						/>
 						<p>Mandala App</p>
-					</a>
+					</Link>
 				</Grid>
 				<Grid item xs={12} md={6} lg={8}>
 					<ul className={styles.containerList}>

@@ -1,4 +1,4 @@
-import {Box, Button, Typography} from '@mui/material';
+import {Box, Button, Paper, Typography} from '@mui/material';
 
 import {useState} from 'react';
 
@@ -18,11 +18,13 @@ const ItemCount = ({stock, initial = 1, onAdd}) => {
 	};
 
 	return (
-		<Box sx={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+		<Box>
 			<Box>
-				<Typography>{counter}</Typography>
+				<Paper elevation={3}>
+					<Typography>{counter}</Typography>
+				</Paper>
 			</Box>
-			<Box sx={{gap: '10'}}>
+			<Box>
 				<Button
 					variant="outlined"
 					size="small"
@@ -39,7 +41,7 @@ const ItemCount = ({stock, initial = 1, onAdd}) => {
 				</Button>
 			</Box>
 			<Button
-				variant="outlined"
+				variant="contained"
 				size="small"
 				color="secondary"
 				onClick={() => onAdd(counter)}>

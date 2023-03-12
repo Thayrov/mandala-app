@@ -26,11 +26,11 @@ const Navbar = () => {
 				</Grid>
 				<Grid item xs={12} md={6} lg={8}>
 					<ul className={styles.containerList}>
-						<li>
+						<Link to="/tienda">
 							<Button variant="outlined" size="small">
 								Tienda
 							</Button>
-						</li>
+						</Link>
 						<li>
 							<Button variant="outlined" size="small">
 								Galería
@@ -48,26 +48,6 @@ const Navbar = () => {
 					<CartWidget />
 				</Grid>
 			</Grid>
-			{/* <div className={styles.containerNavbar}>
-				<div className={styles.logo}></div>;
-				<ul className={styles.containerList}>
-					<li>Tienda</li>
-					<li>Galería</li>
-					<li>Contacto</li>
-				</ul>
-				<CartWidget />
-				<Box
-					sx={{
-						width: 300,
-						height: 300,
-						backgroundColor: 'palette.primary.dark',
-						'&:hover': {
-							backgroundColor: 'palette.primary.main',
-							opacity: [0.9, 0.8, 0.7],
-						},
-					}}
-				/>
-			</div> */}
 		</Box>
 	);
 };

@@ -1,10 +1,13 @@
 import {Box, Grid, Typography} from '@mui/material';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {
+	Footer,
+	Home,
+	ItemDetailContainer,
+	ItemListContainer,
+	Navbar,
+} from './Components';
 
-import Footer from './Components/Footer/Footer';
-import ItemDetail from './Components/ItemDetail/ItemDetail';
-import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
-import Navbar from './Components/Navbar/Navbar';
 import ProductCard from './Components/ProductCard/ProductCard';
 
 function App() {
@@ -26,11 +29,36 @@ function App() {
 					</Grid>
 					<Grid item xs={12}>
 						<Routes>
-							<Route path="/" element={<ProductCard />} />
-							<Route path="/itemDetail/:id" element={<ItemDetail />} />
+							<Route path="/" element={<Home />} />
+							<Route path="/tienda" element={<ItemListContainer />} />
+							<Route path="/category/:id" element={<ItemListContainer />} />
+							<Route path="/item/:id" element={<ItemDetailContainer />} />
+							<Route path="/producto" element={<ProductCard />} />
 							<Route
-								path="/greeting"
-								element={<ItemListContainer greeting={'¡Hola buen día! 🦄'} />}
+								path="/galería"
+								element={
+									<Typography
+										sx={{
+											display: 'flex',
+											alignItems: 'center',
+											justifyContent: 'center',
+										}}>
+										Página en construcción
+									</Typography>
+								}
+							/>
+							<Route
+								path="/contacto"
+								element={
+									<Typography
+										sx={{
+											display: 'flex',
+											alignItems: 'center',
+											justifyContent: 'center',
+										}}>
+										Página en construcción
+									</Typography>
+								}
 							/>
 							<Route
 								path="*"

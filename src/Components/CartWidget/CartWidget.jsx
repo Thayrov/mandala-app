@@ -1,4 +1,4 @@
-import {Box, Typography} from '@mui/material';
+import {Badge, Box} from '@mui/material';
 
 import {RiShoppingCartLine} from 'react-icons/ri';
 
@@ -7,8 +7,16 @@ const CartWidget = () => {
 		<Box
 			px={2}
 			sx={{display: 'flex', justifyContent: 'flex-end', color: 'primary.dark'}}>
-			<RiShoppingCartLine size={25} />
-			<Typography variant="h8">0</Typography>
+			<Badge
+				badgeContent={0}
+				color="primary"
+				showZero
+				anchorOrigin={{
+					vertical: 'bottom',
+					horizontal: 'right',
+				}}>
+				<RiShoppingCartLine size={25} />
+			</Badge>
 		</Box>
 	);
 };

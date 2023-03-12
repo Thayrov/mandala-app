@@ -5,13 +5,11 @@ const Footer = () => {
 		<Box
 			py={2}
 			sx={{
+				position: 'sticky',
+				alignItems: 'flex-end',
+				justifyContent: 'flex-end',
 				width: '100%',
-				height: '8vh',
-				position: 'absolute',
-				bottom: '0',
-				display: 'flex',
-				alignItems: 'center',
-				justifyContent: 'center',
+				textAlign: 'center',
 			}}>
 			<Typography>
 				Este es un proyecto académico realizado por Thayrov García

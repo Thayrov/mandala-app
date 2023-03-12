@@ -1,9 +1,16 @@
 import {Box, Typography} from '@mui/material';
 
-const ItemDetail = () => {
+import ItemCount from '../ItemCount/ItemCount';
+
+const ItemDetail = ({mandala, onAdd}) => {
 	return (
-		<Box>
-			<Typography>ItemDetail</Typography>
+		<Box
+			key={mandala.id}
+			sx={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+			<Typography variant="h2">{mandala.title}</Typography>
+			<img src={mandala.img} alt={mandala.details} />
+			<Typography variant="body1">{mandala.details}</Typography>
+			<ItemCount stock={mandala.stock} onAdd={onAdd} />
 		</Box>
 	);
 };

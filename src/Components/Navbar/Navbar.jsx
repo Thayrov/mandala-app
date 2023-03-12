@@ -31,16 +31,16 @@ const Navbar = () => {
 								Tienda
 							</Button>
 						</Link>
-						<li>
+						<Link to="/galería">
 							<Button variant="outlined" size="small">
 								Galería
 							</Button>
-						</li>
-						<li>
+						</Link>
+						<Link to="/contacto">
 							<Button variant="outlined" size="small">
 								Contacto
 							</Button>
-						</li>
+						</Link>
 					</ul>
 				</Grid>
 

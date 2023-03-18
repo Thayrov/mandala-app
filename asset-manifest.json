@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/mandala-app/static/css/main.b4df6239.css",
-    "main.js": "/mandala-app/static/js/main.683bab42.js",
+    "main.js": "/mandala-app/static/js/main.5c848ece.js",
     "index.html": "/mandala-app/index.html",
     "main.b4df6239.css.map": "/mandala-app/static/css/main.b4df6239.css.map",
-    "main.683bab42.js.map": "/mandala-app/static/js/main.683bab42.js.map"
+    "main.5c848ece.js.map": "/mandala-app/static/js/main.5c848ece.js.map"
   },
   "entrypoints": [
     "static/css/main.b4df6239.css",
-    "static/js/main.683bab42.js"
+    "static/js/main.5c848ece.js"
   ]
 }

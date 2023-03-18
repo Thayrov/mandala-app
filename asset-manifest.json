@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mandala-app/static/css/main.b4df6239.css",
+    "main.js": "/mandala-app/static/js/main.06a4244a.js",
+    "index.html": "/mandala-app/index.html",
+    "main.b4df6239.css.map": "/mandala-app/static/css/main.b4df6239.css.map",
+    "main.06a4244a.js.map": "/mandala-app/static/js/main.06a4244a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4df6239.css",
+    "static/js/main.06a4244a.js"
+  ]
+}

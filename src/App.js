@@ -1,5 +1,4 @@
 import {Box, Grid, Typography} from '@mui/material';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import {
 	Footer,
 	Home,
@@ -7,12 +6,13 @@ import {
 	ItemListContainer,
 	Navbar,
 } from './Components';
+import {HashRouter, Route, Routes} from 'react-router-dom';
 
 import ProductCard from './Components/ProductCard/ProductCard';
 
 function App() {
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<Box
 				sx={{
 					width: '100%',
@@ -73,7 +73,7 @@ function App() {
 					</Grid>
 				</Grid>
 			</Box>
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
 

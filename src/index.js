@@ -5,7 +5,6 @@ import {ThemeProvider, createTheme} from '@mui/material';
 import App from './App';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { HashRouter as Router } from "react-router-dom";
 
 const theme = createTheme({
 	//https://coolors.co/fbeef2-f78da7-c5adcf-8ed1fc-0a121f
@@ -27,9 +26,7 @@ const theme = createTheme({
 });
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-<Router>
 	<ThemeProvider theme={theme}>
 		<App />
 	</ThemeProvider>,
-	</Router>
 );

@@ -1,24 +1,30 @@
 import {useEffect, useState} from 'react';
 
 import ItemList from '../ItemList/ItemList';
-import axios from 'axios';
+import {MANDALAS} from '../../data/dataMock';
 import {useParams} from 'react-router-dom';
 
 const ItemListContainer = () => {
-	const {id} = useParams();
+	const {categoryName} = useParams();
 
 	const [mandalas, setMandalas] = useState([]);
-	const [loaded, setLoaded] = useState(false);
+
+	const filteredMandalas = MANDALAS.filter(m => m.category === categoryName);
 
 	useEffect(() => {
-		setLoaded(false);
-		const data = axios.get(
-			id
-				? `http://localhost:5000/mandalas?category=${id}`
-				: 'http://localhost:5000/mandalas',
-		);
-		data.then(res => setMandalas(res.data));
-	}, [loaded, id]);
+		const mandalaData = new Promise((resolve, reject) => {
+			resolve(categoryName ? filteredMandalas : MANDALAS);
+		});
+
+		mandalaData
+			.then(res => {
+				setMandalas(res);
+			})
+			.catch(error => {
+				console.log(error);
+			});
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [categoryName]);
 
 	return <ItemList mandalas={mandalas} />;
 };

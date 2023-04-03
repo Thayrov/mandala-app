@@ -1,4 +1,5 @@
-<a name="readme-top"></a>
+# MANDALA APP
+
 <!-- LOGO DEL PROYECTO -->
 <br />
 <div align="center">
@@ -44,7 +45,7 @@ Ejercicio académico que pide hacer una app de un e-commerce para poder vender p
 
 Realicé una app que pueda en futuro servir para publicitar y vender mandalas que mi esposa colorea a mano con distintas técnicas de pintura. 
 
-<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+<p align="right">(<a href="#mandala-app">volver arriba</a>)</p>
 
 
 
@@ -56,7 +57,7 @@ Las tecnologías, librería o dependencias más importantes que utilicé para la
 * React Router
 * Firebase
 
-<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+<p align="right">(<a href="#mandala-app">volver arriba</a>)</p>
 
 <!-- EMPECEMOS --->
 ## Empecemos
@@ -65,7 +66,7 @@ Para obtener una copia local funcionando, siga estos simples pasos de ejemplo.
 
 ### Pre requisitos
 
-Lo primero es tener el gestor de paquetes npm, lo qúedes instalar con el siguiente comando: 
+Lo primero es tener el gestor de paquetes npm, lo puedes instalar con el siguiente comando: 
   ```sh
   npm install npm@latest -g
   ```
@@ -87,7 +88,7 @@ Para la instalación de los archivos y dependencias necesarias para el proyecto,
    const API_KEY = 'INGRESA TU API';
    ```
 
-<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+<p align="right">(<a href="#mandala-app">volver arriba</a>)</p>
 
 
 
@@ -96,7 +97,7 @@ Para la instalación de los archivos y dependencias necesarias para el proyecto,
 
 Puedes clonar este proyecto y alimentarlo con los productos que desees para usarlo como boilerplate para la tienda en linea que necesitas 😊
 
-<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+<p align="right">(<a href="#mandala-app">volver arriba</a>)</p>
 
 
 <!-- CONTRIBUCIONES -->
@@ -108,7 +109,7 @@ Si tiene una sugerencia que pueda mejorar esto, haga un fork del repositorio y c
 ¡No olvide darle una estrella al proyecto! ¡Gracias de nuevo!
 
 
-<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+<p align="right">(<a href="#mandala-app">volver arriba</a>)</p>
 
 
 
@@ -119,4 +120,4 @@ Thayrov García - [linkedin.com/in/thayrovg](https://www.linkedin.com/in/thayrov
 
 Link del proyecto: [https://github.com/Thayrov/mandala-app](https://github.com/Thayrov/mandala-app)
 
-<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+<p align="right">(<a href="#mandala-app">volver arriba</a>)</p>

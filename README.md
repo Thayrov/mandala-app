@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+<!-- LOGO DEL PROYECTO -->
+<br />
+<div align="center">
+  <a href="https://github.com/Thayrov/mandala-app">
+    <img src="https://res.cloudinary.com/dhjlbf6xs/image/upload/v1677270120/MandalaApp/undraw_making_art_re_ee8w_zrdaqb.svg" alt="Logo" width="800" height="200">
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h3 align="center">E-commerce project: Mandala App</h3>
 
-## Available Scripts
+  <p align="center">
+Ejercicio académico que pide hacer una app de un e-commerce para poder vender productos de un rubro a elección.    <br />
+  </p>
+</div>
 
-In the project directory, you can run:
+<!-- TABLA DE CONTENIDOS -->
+<details>
+  <summary>Tabla de contenidos</summary>
+  <ol>
+    <li>
+      <a href="#acerca-del-proyecto">Acerca del proyecto</a>
+      <ul>
+        <li><a href="#desarrollado-con">Desarrollado con</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#empecemos">Empecemos</a>
+      <ul>
+        <li><a href="#pre-requisitos">Pre requisitos</a></li>
+        <li><a href="#instalación">Instalación</a></li>
+      </ul>
+    </li>
+    <li><a href="#uso">Uso</a></li>
+    <li><a href="#contribuciones">Contribuciones</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  
+  </ol>
+</details>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- ACERCA DEL PROYECTO -->
+## Acerca del proyecto
 
-### `npm test`
+Realicé una app que pueda en futuro servir para publicitar y vender mandalas que mi esposa colorea a mano con distintas técnicas de pintura. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Desarrollado con
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Las tecnologías, librería o dependencias más importantes que utilicé para la realización de este proyecto son: 
+* React
+* Material UI
+* React Router
+* Firebase
 
-### `npm run eject`
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- EMPECEMOS --->
+## Empecemos
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para obtener una copia local funcionando, siga estos simples pasos de ejemplo.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Pre requisitos
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Lo primero es tener el gestor de paquetes npm, lo qúedes instalar con el siguiente comando: 
+  ```sh
+  npm install npm@latest -g
+  ```
 
-## Learn More
+### Instalación
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para la instalación de los archivos y dependencias necesarias para el proyecto, sigue las instrucciones siguientes: 
+1. Obtén una API Key gratis en [firebase.com](firebase.com)
+2. Clona el repo
+   ```sh
+   git clone https://github.com/Thayrov/mandala-app
+   ```
+3. Instala los paquetes de NPM
+   ```sh
+   npm install
+   ```
+4. Ingresa tu API in `config.js`
+   ```js
+   const API_KEY = 'INGRESA TU API';
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+<!-- USO EXAMPLES -->
+## Uso
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Puedes clonar este proyecto y alimentarlo con los productos que desees para usarlo como boilerplate para la tienda en linea que necesitas 😊
 
-### Making a Progressive Web App
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+<!-- CONTRIBUCIONES -->
+## Contribuciones
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Las contribuciones son lo que hacen de la comunidad de código abierto un lugar tan increíble para aprender, inspirar y crear. Cualquier contribución que haga es muy apreciada.
 
-### Deployment
+Si tiene una sugerencia que pueda mejorar esto, haga un fork del repositorio y cree una solicitud de extracción (pull request). También puede simplemente abrir un issue (problema) con la etiqueta "mejora".
+¡No olvide darle una estrella al proyecto! ¡Gracias de nuevo!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<!-- CONTACTO -->
+## Contacto
+
+Thayrov García - [linkedin.com/in/thayrovg](https://www.linkedin.com/in/thayrovg/) - thayrovg@gmail.com
+
+Link del proyecto: [https://github.com/Thayrov/mandala-app](https://github.com/Thayrov/mandala-app)
+
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>

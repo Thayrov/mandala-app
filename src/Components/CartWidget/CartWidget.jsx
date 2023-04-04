@@ -1,23 +1,31 @@
 import {Badge, Box} from '@mui/material';
 
+import {CartContext} from '../../Context/CartContext';
+import {Link} from 'react-router-dom';
 import {RiShoppingCartLine} from 'react-icons/ri';
+import {useContext} from 'react';
 
 const CartWidget = () => {
+	const {getTotalQuantity} = useContext(CartContext);
+
+	const total = getTotalQuantity();
 	return (
-		<Box
-			px={2}
-			sx={{display: 'flex', justifyContent: 'flex-end', color: 'primary.dark'}}>
-			<Badge
-				badgeContent={0}
-				color="primary"
-				showZero
-				anchorOrigin={{
-					vertical: 'bottom',
-					horizontal: 'right',
-				}}>
-				<RiShoppingCartLine size={25} />
-			</Badge>
-		</Box>
+		<Link to="/cart">
+			<Box
+				px={2}
+				sx={{display: 'flex', justifyContent: 'flex-end', color: 'info.main'}}>
+				<Badge
+					badgeContent={total}
+					color="secondary"
+					showZero
+					anchorOrigin={{
+						vertical: 'bottom',
+						horizontal: 'right',
+					}}>
+					<RiShoppingCartLine size={30} />
+				</Badge>
+			</Box>
+		</Link>
 	);
 };
 

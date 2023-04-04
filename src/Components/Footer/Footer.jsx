@@ -5,13 +5,17 @@ const Footer = () => {
 		<Box
 			py={2}
 			sx={{
-				position: 'sticky',
+				position: 'fixed',
+				bottom: 0,
 				alignItems: 'flex-end',
 				justifyContent: 'flex-end',
 				width: '100%',
 				textAlign: 'center',
+				minHeight: '5%',
+				backgroundColor: 'info.main',
+				marginTop: '5%',
 			}}>
-			<Typography>
+			<Typography sx={{color: 'secondary.light'}}>
 				Este es un proyecto académico realizado por Thayrov García
 			</Typography>
 		</Box>

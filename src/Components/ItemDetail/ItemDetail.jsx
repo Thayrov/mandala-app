@@ -10,7 +10,7 @@ import {
 
 import ItemCount from '../ItemCount/ItemCount';
 
-const ItemDetail = ({mandala, onAdd}) => {
+const ItemDetail = ({mandala, onAdd, quantity}) => {
 	return (
 		<Box
 			key={mandala.id}
@@ -35,7 +35,7 @@ const ItemDetail = ({mandala, onAdd}) => {
 					<Typography variant="body1">{mandala.details}</Typography>
 				</CardContent>
 				<CardActions sx={{justifyContent: 'center'}}>
-					<ItemCount stock={mandala.stock} onAdd={onAdd} />
+					<ItemCount stock={mandala.stock} onAdd={onAdd} initial={quantity} />
 				</CardActions>
 			</Card>
 		</Box>
